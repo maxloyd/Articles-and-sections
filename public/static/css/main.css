@@ -1,0 +1,35 @@
+body {
+    background-color: #eeeeee;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.item {
+    display: inline-block;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+p {
+    border-bottom: 1px solid black;
+    width: 6%;
+    margin: 0 auto;
+    margin-top: 32px;
+}
+
+.item p:last-child {
+    border: 0;
+}
+
+.item p:nth-child(even) {
+    background-color: orange;
+}
+
+.item p:nth-child(odd) {
+    background-color: mediumseagreen;
+}

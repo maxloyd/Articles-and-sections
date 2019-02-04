@@ -1,0 +1,13 @@
+{% extends 'public/base.html' %}
+
+{% block content %}
+    {% for section in object_list %}
+        <div class="item">
+            <h1>{{ section.title }}</h1>
+
+            {% for articles in section.articles_set.all %}
+                <p>{{ articles.title }}</p>
+            {% endfor %}
+        </div>
+    {% endfor %}
+{% endblock %}
